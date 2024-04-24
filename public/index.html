@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload YouTube Video</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Center button vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Additional styles for button */
+        .upload-btn {
+            font-size: 1.5rem;
+            padding: 15px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <button class="btn btn-primary upload-btn" onclick="redirectToUpload()">Upload YouTube Video</button>
+    </div>
+
+    <!-- JavaScript to redirect to /upload -->
+    <script>
+        function redirectToUpload() {
+            window.location.href = "/upload";
+        }
+    </script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
